@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: painel-de-contas
+    tags: ['painel_contas','daily']
+    description: "{{ doc('descricao') }}"
+    type: dashboard
+    url: https://app.powerbi.com/view?r=eyJrIjoiYzhlZTk5MTEtOGU2OS00Mzk4LWI2OWItNDhiMDUwMjU4MWEwIiwidCI6IjFiY2VmYjJiLTdkMmYtNDRkNS04ZTYxLTVlZjE3ZDI2YzM4ZiJ9
+    meta: {<dictionary>}
+    owner:
+      name: Paulo César
+      email: paulocesarmlf@gmail.com
+    depends_on:
+      - ref('stg_accounts')
+      - source('csv', 'accounts')
+    label: "Painel de contas"

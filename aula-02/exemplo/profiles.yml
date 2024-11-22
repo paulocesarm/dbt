@@ -1,0 +1,13 @@
+exemplo:
+  target: dev
+  outputs:
+    dev:
+      type: "postgres"
+      host: "localhost"
+      user: "paulocesar"
+      password: "bruce150614"
+      port: 5445
+      dbname: "estudodb" # or database instead of dbname
+      schema: "dbt"
+      threads: 4
+  

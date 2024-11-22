@@ -1,0 +1,21 @@
+case_models_03:
+  target: dev
+  outputs:
+    dev:
+      type: "postgres"
+      host: "localhost"
+      user: "paulocesar"
+      password: "{{env_var('PASS')}}"
+      port: 5445
+      dbname: "estudodb" # or database instead of dbname
+      schema: "dbt"
+      threads: 4
+    prod:
+      type: "postgres"
+      host: "localhost"
+      user: "paulocesar"
+      password: "{{env_var('PASS')}}"
+      port: 5445
+      dbname: "estudodb" # or database instead of dbname
+      schema: "dbt_prod"
+      threads: 4

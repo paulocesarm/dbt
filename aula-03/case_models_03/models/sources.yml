@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: csv
+    database: estudodb  
+    schema: transactional  
+    tables:
+      - name: accounts
+        tags: ['painel_contas','hourly']
+      - name: customers
+        tags: ['painel_contas','hourly']
