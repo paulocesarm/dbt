@@ -25,6 +25,7 @@ exposures:
       - source('csv', 'accounts')
     label: "Painel de contas"
 
+
 models:
   - name: stg_accounts
     description: modelo da area staging de contas
